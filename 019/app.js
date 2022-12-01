@@ -10,4 +10,5 @@ else if(periodo == "n"){
 else{
     document.getElementById("Resultado").innerHTML = "Período inaválido"
 }
+  Document.getElementById('periodo').value = ("")
 }
