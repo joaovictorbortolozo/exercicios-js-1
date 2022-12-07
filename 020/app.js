@@ -1,9 +1,12 @@
 function Letra(){
-    let letra = document.getElementById('Letra').value
-    if (letra == "a"){
-    document.getElementById('resposta').innerHTML = 'Vogal' 
+    let letra = document.getElementById('letra').value
+    letra = letra.toLowerCase();
+
+    if(letra=='a' || letra=='e' || letra=='i' || letra=='o' || letra=='u'){
+        document.getElementById('Resposta').innerHTML = "Vogal"
     }
-    else if (""){
-        document.getElementById('resposta').innerHTML = 'Consoante' 
-        }
+    else{
+        document.getElementById('Resposta').innerHTML= "Consoante"
+    }
+
 }

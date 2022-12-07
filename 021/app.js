@@ -1,12 +1,19 @@
 function Media(){
-    let Nota1 = document.getElementById("N1").value
-    let Nota2 = document.getElementById("N2").value
-    let Media = parseFloat(Nota1) + parseFloat(Nota2)
+    var n1 = parseFloat(document.getElementById("N1").value)
+    var n2 = parseFloat(document.getElementById("N2").value)
+    var media = (n1 + n2)/2;
+   
     
-    if( Media >= 6 ){
-        document.getElementById("Resultado").innerHTML = Media/2 + " " + "Aprovado"
+    if( media >= 7 )
+    if (media == 10)
+    {
+        document.getElementById("Resultado").innerHTML = "Aprovado com distinção" 
     }
-    else if(Media <= 5){
-        document.getElementById("Resultado").innerHTML  = Media/2 + " " + "Reprovado"
+    else{
+         document.getElementById("Resultado").innerHTML = "Aprovado " 
     }
-}
+    else if(media <= 6){
+        document.getElementById("Resultado").innerHTML  = "Reprovado" 
+    }
+  
+} 
